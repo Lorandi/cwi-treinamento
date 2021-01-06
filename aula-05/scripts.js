@@ -23,11 +23,9 @@ item5 = 50;
 
 console.log((item1+item2+item3+item4+item5)/5)
 
-lucroBruto = receitaLiquida - custoProdutos
+//lucroBruto = receitaLiquida - custoProdutos
 
-margemBruta = (lucroBruto/receitaLiquida)*100
-
-
+//margemBruta = (lucroBruto/receitaLiquida)*100
 
 
 saldoInicial = 1000
@@ -48,4 +46,4 @@ divida = saldoAtual * 0.50
 
 saldoAtual = saldoAtual - divida
 
-console.log(saldoAtual)
+console.log("O saldo atual é R$",saldoAtual.toFixed(2))
