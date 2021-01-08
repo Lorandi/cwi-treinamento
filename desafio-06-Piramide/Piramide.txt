@@ -1,0 +1,49 @@
+DESAFIO DA PIRÂMIDE
+
+/*Objetivo: Construir pirâmide feita com dois triangulos retângulos
+  em que a base tem o dobro de # que a altura
+Regras: As duas metades da pirâmide devem ser separadas por dois espaços em branco;
+
+
+Vamos construir uma pirâmide impressa no terminal usando # como tijolos. 
+O formato deve ser assim:
+
+      #  #
+     ##  ##
+    ###  ###
+   ####  ####
+  #####  #####
+
+Para isso, o algotitmo deve pegar o número colocado como argumento da função
+criarPiramide(), que será a altura da mesma.
+Além disso cada metade deve ser separada por dois espaços.
+
+*/
+
+ criarPiramide(1)
+  /**
+  #  #
+  **/
+
+ criarPiramide(5)     
+ /*
+      #  #
+     ##  ##
+    ###  ###
+   ####  ####
+  #####  #####
+*/  
+
+criarPiramide(10)
+/*           
+           #  #
+          ##  ##
+         ###  ###
+        ####  ####
+       #####  #####
+      ######  ######
+     #######  #######
+    ########  ########
+   #########  #########
+  ##########  ##########
+*/
