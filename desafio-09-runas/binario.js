@@ -3,10 +3,15 @@ function debuga(texto) {
         console.log(texto)
     }
 }
+// minhasRunas = ["Ansuz", "Thurisaz", "Thurisaz", "Thurisaz", "Thurisaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Gebo", "Wunjo", "Wunjo", "Wunjo", "Jara", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Raidho", "Raidho", "Mannaz", "Mannaz", "Mannaz"];
 
-minhasRunas = ["Ansuz", "Thurisaz", "Thurisaz", "Thurisaz", "Thurisaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Gebo", "Wunjo", "Wunjo", "Wunjo", "Jara", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Raidho", "Raidho", "Mannaz", "Mannaz", "Mannaz"];
+// receitaPedraSecretaDoSol = ["Ansuz", "Ansuz", "Elhaz", "Gebo", "Mannaz", "Raidho", "Sowilo", "Tiwaz"];  
+   minhasRunas = ["Ansuz", "Thurisaz", "Thurisaz", "Thurisaz", "Thurisaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Kenaz", "Gebo", "Wunjo", "Wunjo", "Wunjo", "Jara", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Fehu", "Raidho", "Raidho", "Mannaz", "Mannaz"];
 
-receitaPedraSecretaDoSol = ["Ansuz", "Elhaz", "Ansuz", "Gebo", "Mannaz", "Raidho", "Sowilo", "Tiwaz"];
+   receitaPedraSecretaDoSol = ["Ansuz", "Elhaz", "Ansuz", "Gebo", "Mannaz", "Mannaz", "Sowilo", "Tiwaz"];
+
+
+
 runasFaltantes = []
 count = 0
 
@@ -24,7 +29,9 @@ fimDaBusca = false
 
 for (i = 0; i < receitaPedraSecretaDoSol.length; i++) {
     
+    
     if(receitaPedraSecretaDoSol[i] == receitaPedraSecretaDoSol[i-1]){ //verificando se elemento não é repetido
+        console.log("")
         debuga('Procurando mais um :' + receitaPedraSecretaDoSol[i] + ' - ' + i)
         if (minhasRunas[j-1] === receitaPedraSecretaDoSol[i]) {
             debuga("Encontrou: " + receitaPedraSecretaDoSol[i])
@@ -41,6 +48,7 @@ for (i = 0; i < receitaPedraSecretaDoSol.length; i++) {
         break;
     }
 
+    console.log("")
     debuga('Procurando: ' + receitaPedraSecretaDoSol[i] + ' - ' + i)
     indexMax = minhasRunas.length
     encontrado = false
