@@ -13,7 +13,7 @@ let numeroFinal;
 
 function soma(numero){
         numeroToString = numero.toString();        
-        //console.log(numeroToString)      
+            
         do{        
         numeroFinal = 0;
         for(i=0; i < numeroToString.length; i++){                
@@ -25,9 +25,12 @@ function soma(numero){
         console.log(numeroFinal)      
 }
 
-soma(9);
-soma(18);
-soma(27);
-soma(108);
-soma(207);
-soma(111111111);
+// soma(9);                //9
+// soma(18);               //9
+// soma(27);               //9
+// soma(108);              //9
+// soma(207);              //9
+// soma(111111111);        //9
+soma(7992312398);
+soma(123456789);
+                             
